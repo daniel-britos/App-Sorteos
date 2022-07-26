@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="colum-1 col-ms-1 col-md-8 text-center d-flex flex-column justify-content-center align-content-center">
+            <h1 class="display-4 py-3">BIENVENIDOS AL SORTEO</h1>
+           <a asp-action="Formulario" asp-controller="Participantes" type="button" class="btn btn-outline-info mb-5">PARTICIPAR</a>
+           
+        </div>
+
+        <div class="colum-2 col-ms-1 col-md-4 text-center text-sm-start p-3">  
+            <h6>BASES Y CONDICIONES DEL SORTEO</h6><br />
+            <P>Para participar del sorteo, el interesado deberá completar el 
+                <a href="#">FORMULARIO</a>
+            </P>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>Cada participante deberá completar el mismo con sus datos personales, nombre completo, fecha de nacimiento, DNI, correo electrónico, un número de celular y un mail de contacto.</p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>olo podrán participar personas físicas MAYORES DE 18 AÑOS.</p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>El sistema le otorgará a cada participante un número único e irrepetible, por persona.<br /></p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>A cada uno de los concursantes se les enviará un correo electrónico a modo de confirmación, entre los datos que aparecerán en el correo estará el número que el sistema le ha otorgado como así también los datos pertinentes del sorteo al cual se inscribió.</p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>En el sitio www.javiermilei.com, además de inscribirse también se podrá visualizar un listado de personas ya inscriptas. Los datos de los participantes no serán visibles en su totalidad para preservar la identidad de los mismos.</p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>El propio programa elegirá de forma aleatoria entre todos los concursantes un ganador.</p>
+                <p><img class="icon-confirm" src="~/assets/check.svg"/>Los datos correspondientes al ganador serán verificados por ESCRIBANO PÚBLICO dando veracidad a los mismos.</p>
+        </div>
+        <div class="colum-3 col-12">    
+            <h1> PREMIO USD$100.0000</h1>
+        </div>
+    </div>
+</div>
+
+

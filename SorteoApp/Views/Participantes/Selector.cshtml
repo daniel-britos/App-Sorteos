@@ -1,0 +1,27 @@
+﻿@model Participante
+<p> En esta vista se verá una aplicación
+    que seleccionará aleatoriamente un numero
+    
+    
+    dentro de todos los usuarios registrados
+    al sorteo.
+    (Se considera la posibilidad de compartir el codigo
+    encargado de seleccionar el numero aleatorio para
+    que los usuarios puedan ver que efectivamente
+    funciona sin intencionalidad de trasforndo.)
+</p>
+
+<!--
+foreach(var item in ViewBag.SelectorGanador)
+{
+    <h1>item.Dni </h1>
+} TENGO QUE PONER LAS ARROBAS EN FOREACH ITEM Y VIEWBAG PARA USAR
+-->
+
+<div class="col-ms-1 col-md-8 text-center d-flex flex-column justify-content-center align-content-center">
+    <a asp-action="Resultado" asp-controller="Participantes" type="button" class="btn btn-outline-info mb-5">BOTON</a>           
+</div>
+
+
+
+

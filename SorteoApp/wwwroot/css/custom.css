@@ -1,0 +1,206 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    background-color: #333;
+    color: white;
+}
+.bg-navcolor {
+    background-color: #00b3b3;
+}
+.btn-outline-info {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+}
+@media (max-width: 576px){
+    .colum-1 > .btn {
+        font-size: 20px;
+    }
+}
+.colum-2 {
+    
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.colum-2 > p {
+    margin: 0;
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+} 
+a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.colum-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/dolares.jpg);
+    background-size: cover; 
+    width: 100%;
+    height: 320px;
+}
+
+/*ICONOS*/
+.icon-confirm {
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+}
+
+
+/*MODAL*/
+.box-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.box-selector > h1 {
+    background-color: red;
+    font-size: 70px;
+    border-radius: 5%;
+    padding: 0 20px 0 20px;
+}
+.box-selector > h3 {
+    font-size: 40px;
+}
+.box-selector > div > a {
+    font-size: 0.8rem;
+}
+
+.box-selector > h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+@media (max-width: 576px){
+    .box-selector {
+        padding-top: 110px;
+    }
+    .box-selector > h1 {
+        font-size: 60px;
+    }
+    .box-selector > h3 {
+        font-size: 30px;
+    }
+}
+
+
+.list-selector {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+/*CONTADOR REGRESIVO*/
+
+.contador-fade::before {
+    content: "";
+    background-color: red;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    animation: reg 2s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reg {
+    from {
+        opacity: 100%;
+        z-index: 1;
+    }
+
+    to {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+
+.cont {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    text-align: center;    
+}
+.cont > h1 {
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteo {
+    position: absolute;
+    animation-name: apagar;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    font-size: 200px;
+    background-color: rgb(189, 189, 189);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.uno {
+    animation-delay: 4.5s;
+}
+
+.dos {
+    animation-delay: 3s;
+}
+
+.tres {
+    animation-delay: 1.5s;
+}
+
+@keyframes apagar {
+    from {
+        opacity: 100%;
+        z-index: 1;
+    }
+
+    to {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+.ganador {
+    position: absolute;
+    animation-name: final;
+    animation-duration: 4.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 5s;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@keyframes final {
+    from {
+        opacity: 100%;
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    to {
+        opacity: 0%;
+        font-size: 90px;
+        z-index: -1;
+    }
+}
+
+

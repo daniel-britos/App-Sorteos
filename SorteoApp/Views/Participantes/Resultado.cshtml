@@ -1,0 +1,42 @@
+﻿
+<div class="contador-fade"></div>
+
+<div class="cont">   
+    <h1 class="ganador">El ganador es...</h1>          
+    <h1 class="uno conteo">1</h1>
+    <h1 class="dos conteo">2</h1>
+    <h1 class="tres conteo">3</h1>     
+</div>
+
+<div class="box-selector col-ms-1">
+    <h3>FELICITACIONES </h3>
+    <h1>@ViewBag.RandomNombre @ViewBag.RandomApellido </h1>
+    <h3>GANASTE!</h3>
+    <table>
+        <thead>
+            <tr class="list-selector">
+                <th>DNI: @ViewBag.RandomDni</th>
+                <th>Provincia: @ViewBag.RandomProvincia </th>
+                <th>Localidad: @ViewBag.RandomLocalidad </th>
+            </tr>
+        </thead>
+    </table>
+    <div class="colum-1 col-ms-1 col-md-8 text-center d-flex flex-column justify-content-center align-content-center">
+        <a asp-action="Resultado" asp-controller="Participantes" type="button" class="btn btn-outline-info mb-5">OTRO GANADOR</a>           
+    </div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
