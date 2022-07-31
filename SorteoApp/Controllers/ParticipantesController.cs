@@ -52,7 +52,7 @@ namespace SorteoApp.Controllers
             _context.SaveChanges();
 
 
-            return View("Registro");  //"Registro"
+            return View("Registro");  
 
         }
 
@@ -81,7 +81,7 @@ namespace SorteoApp.Controllers
             var randoms = rand.Next(0, _context.Participantes.Count());
             //skip(saltea random) - Take(toma 1) - Select(selecciona x de x.nombre - FirstOrderDefault(devuelve la primera de una lista o null si no encuentra coincidencia)
             var nombre = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Nombre).FirstOrDefault();
-            var apellido = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Nombre).FirstOrDefault();
+            var apellido = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Apellido).FirstOrDefault();
             var dni = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Dni).FirstOrDefault();
             var provincia = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Provincia).FirstOrDefault();
             var localidad = _context.Participantes.Skip(randoms).Take(1).Select(p => p.Localidad).FirstOrDefault();

@@ -2,94 +2,98 @@
 @{
     ViewData["Title"] = "Formulario";
 }
-<h1>@ViewData["Title"]</h1>
+<section class="form-container">
 
-<a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver</a>
+    <h1>@ViewData["Title"]</h1>
 
-<p> Los datos ingresados serán tomados en cuenta para que usted pueda acceder a su premio.<br />
-y no serán expuestos al público para su seguridad.
-</p>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver</a>
+
+    <p> Los datos ingresados serán tomados en cuenta para que usted pueda acceder a su premio.<br />
+    y no serán expuestos al público para su seguridad.
+    </p>
 
 
-<form class="row g-3" method="post" asp-controller="Participantes" asp-action="Registro">
-  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-  <div class="col-md-6">
-    <label asp-for="Nombre" class="form-label"></label>
-    <input asp-for="Nombre" type="text" class="form-control" id="inputEmail4" placeholder="Ingrese su nombre...">
-    <span asp-validation-for="Nombre" class="text-danger"></span>
-  </div>
-  <div class="col-md-6">
-    <label asp-for="Apellido" class="form-label"></label>
-    <input asp-for="Apellido" type="text"  class="form-control" id="inputPassword4" placeholder="Ingrese su apellido...">
-    <span asp-validation-for="Apellido" class="text-danger"></span>
-  </div>
-  <div class="col-md-6">
-    <label asp-for="Email" class="form-label"></label>
-    <input asp-for="Email" type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@gmail.com">
-    <span asp-validation-for="Email" class="text-danger"></span>
-  </div>
-  <div class="col-md-6">
-    <label asp-for="Dni" class="form-label"></label>
-    <input asp-for="Dni" type="number" class="form-control" id="inputPassword4" placeholder="Numero de documento...">
-    <span asp-validation-for="Dni" class="text-danger"></span>
-  </div>
-  <div class="col-12">
-    <label asp-for="Direccion" class="form-label"></label>
-    <input asp-for="Direccion" type="text" class="form-control" id="inputAddress" placeholder='Ejemplo: "Av. Rivadavia 123" '>
-    <span asp-validation-for="Direccion" class="text-danger"></span>
-</div>
-  <div class="col-12">
-    <label asp-for="CodigoPostal" class="form-label"></label>
-    <input asp-for="CodigoPostal" type="number" class="form-control" id="inputAddress2" placeholder="Ingrese su codigo postal...">
-    <span asp-validation-for="CodigoPostal" class="text-danger"></span>
-  </div>
-  <div class="col-md-6">
-    <label asp-for="Localidad" class="form-label"></label>
-    <input asp-for="Localidad" type="text" class="form-control" id="inputCity" placeholder="Localidad de residencia..">
-    <span asp-validation-for="Localidad" class="text-danger"></span>
-  </div>
-  <div class="col-md-4">
-    <label asp-for="Provincia" class="form-label"></label>
-    <select asp-for="Provincia" class="form-control">
-        <option selected>...</option>
-        <option >Buenos Aires</option>
-        <option >CABA</option>
-        <option >Misiones</option>
-        <option >Corrientes</option>
-        <option >Entre Rios</option>
-        <option >Chaco</option>
-        <option >Córdoba</option>
-        <option >Tierra del Fuego</option>
-        <option >Santa Fe</option>
-        <option >Rio Negro</option>
-        <option >La Pampa</option>
-        <option >Chubut</option>
-        <option >Mendoza</option>
-        <option >Salta</option>
-        <option >Tucumán</option>
-        <option >Jujuy</option>
-        <option >San Luis</option>
-        <option >San Juan</option>
-        <option >Neuquén</option>
-        <option >Santa Cruz</option>
-        <option >Catamarca</option>
-        <option >La Rioja</option>
-        <option >Santiago del Estero</option>
-        <option >Formosa</option>  
-    </select>
-    <span asp-validation-for="Provincia" class="text-danger"></span>
-  </div>
-
-  <div class="col-12">
-    <div class="form-check">
-      <p>Estoy de acuerdo en compartir mi información con el uso exclusivo del sorteo.</p>
-      <input asp-for="Legal" class="form-check-input" type="checkbox" id="gridCheck">
-      <label asp-for="Legal" class="form-check-label" for="gridCheck"></label>
-      <span asp-validation-for="Legal" class="text-danger"></span>
+    <form class="row g-3" method="post" asp-controller="Participantes" asp-action="Registro">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <div class="col-md-6">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" type="text" class="form-control" id="inputEmail4" placeholder="Ingrese su nombre...">
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+      </div>
+      <div class="col-md-6">
+        <label asp-for="Apellido" class="form-label"></label>
+        <input asp-for="Apellido" type="text"  class="form-control" id="inputPassword4" placeholder="Ingrese su apellido...">
+        <span asp-validation-for="Apellido" class="text-danger"></span>
+      </div>
+      <div class="col-md-6">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@gmail.com">
+        <span asp-validation-for="Email" class="text-danger"></span>
+      </div>
+      <div class="col-md-6">
+        <label asp-for="Dni" class="form-label"></label>
+        <input asp-for="Dni" type="number" class="form-control" id="inputPassword4" placeholder="Numero de documento...">
+        <span asp-validation-for="Dni" class="text-danger"></span>
+      </div>
+      <div class="col-12">
+        <label asp-for="Direccion" class="form-label"></label>
+        <input asp-for="Direccion" type="text" class="form-control" id="inputAddress" placeholder='Ejemplo: "Av. Rivadavia 123" '>
+        <span asp-validation-for="Direccion" class="text-danger"></span>
     </div>
-  </div>
+      <div class="col-12">
+        <label asp-for="CodigoPostal" class="form-label"></label>
+        <input asp-for="CodigoPostal" type="number" class="form-control" id="inputAddress2" placeholder="Ingrese su codigo postal...">
+        <span asp-validation-for="CodigoPostal" class="text-danger"></span>
+      </div>
+      <div class="col-md-6">
+        <label asp-for="Localidad" class="form-label"></label>
+        <input asp-for="Localidad" type="text" class="form-control" id="inputCity" placeholder="Localidad de residencia..">
+        <span asp-validation-for="Localidad" class="text-danger"></span>
+      </div>
+      <div class="col-md-4">
+        <label asp-for="Provincia" class="form-label"></label>
+        <select asp-for="Provincia" class="form-control">
+            <option selected>...</option>
+            <option >Buenos Aires</option>
+            <option >CABA</option>
+            <option >Misiones</option>
+            <option >Corrientes</option>
+            <option >Entre Rios</option>
+            <option >Chaco</option>
+            <option >Córdoba</option>
+            <option >Tierra del Fuego</option>
+            <option >Santa Fe</option>
+            <option >Rio Negro</option>
+            <option >La Pampa</option>
+            <option >Chubut</option>
+            <option >Mendoza</option>
+            <option >Salta</option>
+            <option >Tucumán</option>
+            <option >Jujuy</option>
+            <option >San Luis</option>
+            <option >San Juan</option>
+            <option >Neuquén</option>
+            <option >Santa Cruz</option>
+            <option >Catamarca</option>
+            <option >La Rioja</option>
+            <option >Santiago del Estero</option>
+            <option >Formosa</option>  
+        </select>
+        <span asp-validation-for="Provincia" class="text-danger"></span>
+      </div>
 
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </div>
-</form>
+      <div class="col-12">
+        <div class="form-check">
+          <p>Estoy de acuerdo en compartir mi información con el uso exclusivo del sorteo.</p>
+          <input asp-for="Legal" class="form-check-input" type="checkbox" id="gridCheck">
+          <label asp-for="Legal" class="form-check-label" for="gridCheck"></label>
+          <span asp-validation-for="Legal" class="text-danger"></span>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+
+</section>
